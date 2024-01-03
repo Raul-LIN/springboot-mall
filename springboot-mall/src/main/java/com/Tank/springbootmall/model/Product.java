@@ -1,6 +1,8 @@
 package com.Tank.springbootmall.model;
 
 import java.sql.Date;
+import java.sql.Time;
+import java.sql.Timestamp;
 
 import com.Tank.springbootmall.constant.ProductCategory;
 
@@ -13,8 +15,8 @@ public class Product {
 	private Integer price;
 	private Integer stock;
 	private String description;
-	private Date createDate;
-	private Date ladtModifiedDate;
+	private Timestamp createDate;
+	private Timestamp ladtModifiedDate;
 	
 	public Integer getProductId() {
 		return productId;
@@ -58,18 +60,19 @@ public class Product {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public Date getCreateDate() {
+	public Timestamp getCreateDate() {
 		return createDate;
 	}
-	public void setCreateDate(Date createDate) {
-		this.createDate = createDate;
+	public void setCreateDate(Timestamp timestamp) {
+		this.createDate = timestamp;
 	}
-	public Date getLadtModifiedDate() {
+	public Timestamp getLadtModifiedDate() {
 		return ladtModifiedDate;
 	}
-	public void setLadtModifiedDate(Date ladtModifiedDate) {
-		this.ladtModifiedDate = ladtModifiedDate;
+	public void setLadtModifiedDate(Timestamp timestamp) {
+		this.ladtModifiedDate = timestamp;
 	}
+
 	
 	
 }
