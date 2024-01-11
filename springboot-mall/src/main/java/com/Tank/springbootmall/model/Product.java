@@ -1,7 +1,5 @@
 package com.Tank.springbootmall.model;
 
-import java.sql.Date;
-import java.sql.Time;
 import java.sql.Timestamp;
 
 import com.Tank.springbootmall.constant.ProductCategory;
