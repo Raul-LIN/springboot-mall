@@ -4,6 +4,7 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import com.Tank.springbootmall.dao.ProductDao;
 import com.Tank.springbootmall.dto.ProductRequest;
@@ -26,6 +27,14 @@ public class ProductServiceImpl implements ProductService{
 		// TODO Auto-generated method stub
 		return productDao.createProduct(productRequest);
 	}
+
+	@Override
+	public void updateProduct(Integer productId, ProductRequest productRequest) {
+		// TODO Auto-generated method stub
+		productDao.updateProduct(productId, productRequest);
+	}
+
+	
 
 	
 	
