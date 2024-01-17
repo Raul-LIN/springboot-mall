@@ -1,5 +1,7 @@
 package com.Tank.springbootmall.service.impl;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +18,11 @@ public class ProductServiceImpl implements ProductService{
 
 	@Autowired
 	private ProductDao productDao;
+	
+	@Override
+	public List<Product> getPoducts() {
+		return productDao.getProducts();
+	}
 	
 	@Override
 	public Product getProductById(Integer productId) {
@@ -39,6 +46,8 @@ public class ProductServiceImpl implements ProductService{
 		// TODO Auto-generated method stub
 		productDao.deleteProductById(productId);
 	}
+
+
 
 	
 
