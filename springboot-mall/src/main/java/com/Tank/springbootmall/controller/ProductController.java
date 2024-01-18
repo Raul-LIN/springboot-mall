@@ -14,8 +14,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.Tank.springbootmall.constant.ProductCategory;
 import com.Tank.springbootmall.dto.ProductRequest;
 import com.Tank.springbootmall.model.Product;
 import com.Tank.springbootmall.service.ProductService;
@@ -27,8 +29,11 @@ public class ProductController {
 	private ProductService productService;
 	
 	@GetMapping("/products")
-	public ResponseEntity<List<Product>>getProduct(){
-		List<Product> productList = productService.getPoducts();
+	public ResponseEntity<List<Product>>getProduct(
+			@RequestParam(required = false) ProductCategory category,
+			@RequestParam(required = false) String search 
+	){
+		List<Product> productList = productService.getPoducts(category, search);
 		
 		return ResponseEntity.status(HttpStatus.OK).body(productList);
 	}
