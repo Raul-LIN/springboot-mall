@@ -6,10 +6,8 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.PathVariable;
-
-import com.Tank.springbootmall.constant.ProductCategory;
 import com.Tank.springbootmall.dao.ProductDao;
+import com.Tank.springbootmall.dto.ProductQueryParams;
 import com.Tank.springbootmall.dto.ProductRequest;
 import com.Tank.springbootmall.model.Product;
 import com.Tank.springbootmall.service.ProductService;
@@ -21,8 +19,8 @@ public class ProductServiceImpl implements ProductService{
 	private ProductDao productDao;
 	
 	@Override
-	public List<Product> getPoducts(ProductCategory category, String search) {
-		return productDao.getProducts(category, search);
+	public List<Product> getPoducts(ProductQueryParams productQueryParams) {
+		return productDao.getProducts(productQueryParams);
 	}
 	
 	@Override
