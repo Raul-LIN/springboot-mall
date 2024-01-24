@@ -10,6 +10,8 @@ import com.Tank.springbootmall.model.Product;
 
 public interface ProductService {
 
+	Integer countProduct(ProductQueryParams productQueryParams);
+	
 	List<Product> getPoducts(ProductQueryParams productQueryParams);
 	
 	Product getProductById(Integer productId);
