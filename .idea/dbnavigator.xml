@@ -56,7 +56,9 @@ CREATE TABLE user
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="ddbdb314-2dd8-4f08-9071-bf21eb902c96" object-ref="schemas/mall/tables/user" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="ddbdb314-2dd8-4f08-9071-bf21eb902c96" />
