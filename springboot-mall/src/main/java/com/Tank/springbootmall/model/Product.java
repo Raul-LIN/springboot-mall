@@ -9,12 +9,12 @@ public class Product {
 	private Integer productId;
 	private String productName;
 	private ProductCategory category;
-	private String imgeUrl;
+	private String imageUrl;
 	private Integer price;
 	private Integer stock;
 	private String description;
 	private Timestamp createDate;
-	private Timestamp ladtModifiedDate;
+	private Timestamp lastModifiedDate;
 	
 	public Integer getProductId() {
 		return productId;
@@ -34,11 +34,11 @@ public class Product {
 	public void setCategory(ProductCategory category) {
 		this.category = category;
 	}
-	public String getImgeUrl() {
-		return imgeUrl;
+	public String getImageUrl() {
+		return imageUrl;
 	}
-	public void setImgeUrl(String imgeUrl) {
-		this.imgeUrl = imgeUrl;
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
 	}
 	public Integer getPrice() {
 		return price;
@@ -64,11 +64,11 @@ public class Product {
 	public void setCreateDate(Timestamp timestamp) {
 		this.createDate = timestamp;
 	}
-	public Timestamp getLadtModifiedDate() {
-		return ladtModifiedDate;
+	public Timestamp getLastModifiedDate() {
+		return lastModifiedDate;
 	}
-	public void setLadtModifiedDate(Timestamp timestamp) {
-		this.ladtModifiedDate = timestamp;
+	public void setLastModifiedDate(Timestamp timestamp) {
+		this.lastModifiedDate = timestamp;
 	}
 
 	
