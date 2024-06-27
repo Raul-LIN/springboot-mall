@@ -117,10 +117,7 @@ CREATE TABLE user
     </last-used-providers>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="ddbdb314-2dd8-4f08-9071-bf21eb902c96" object-ref="schemas/mall/tables/order_item" />
-      <object connection-id="ddbdb314-2dd8-4f08-9071-bf21eb902c96" object-ref="schemas/mall/tables/product" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="ddbdb314-2dd8-4f08-9071-bf21eb902c96" />
